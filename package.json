@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "pnpm install && dotnet fable watch src -o js --sourceMaps --runFast vite",
+    "preview": "pnpm install && dotnet fable src -o js --run pnpm vite preview",
+    "build": "pnpm install && dotnet fable src -o js --run pnpm vite build",
+    "clean": "rm -rf src/bin src/obj js dist node_modules pnpm-lock.yaml",
+    "serve": "pnpm vite serve"
+  },
+  "devDependencies": {
+    "vite": "4.2.0"
+  }
+}
